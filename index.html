@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Шарипов Зикриоллоҳ | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-container"></div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Zikriolloh</span>
+                <!-- <span class="logo-dot">.</span>/ -->
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-key="home">Главная</a></li>
+                <li><a href="#about" class="nav-link" data-key="about">Обо мне</a></li>
+                <li><a href="#skills" class="nav-link" data-key="skills">Навыки</a></li>
+                <li><a href="#projects" class="nav-link" data-key="projects">Проекты</a></li>
+                <li><a href="#contact" class="nav-link" data-key="contact">Контакты</a></li>
+                <li class="btnLinkResume">
+                    <a href="./Files/CV Sharipov Zikriolloh.pdf" target="_blank" class="nav-link resume-btn" data-key="Resume">
+                        <i class="fas fa-filef"></i> мое резюме
+                    </a>
+
+                    <a href="./Files/CV Sharipov Zikriolloh.pdf" download class="nav-link" data-key="resume">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="tj">TJ</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <!-- Dark Mode Toggle -->
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <div class="greeting" data-key="greeting">Привет, я</div>
+                    <h1 class="name" data-key="myName">Шарипов Зикриоллоҳ</h1>
+                    <div class="typing-wrapper">
+                        <span class="typing-text" data-key="typing">Фронтенд разработчик</span>
+                    </div>
+                    <p class="description" data-key="description">
+                        Создаю современные, быстрые и интерактивные веб-приложения
+                        с использованием передовых технологий
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn primary" data-key="projects_btn">Мои проекты</a>
+                        <a href="#contact" class="btn secondary" data-key="contact_btn">Связаться</a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="">
+                        <div class="">
+                            <img class="MyPhoto" src="./images/photo_2026-03-23_05-53-31.jpg" alt="">
+                            <!-- <i class="fas fa-user-circle"></i> -->
+                            <!-- <span data-key="photo">Ваше фото</span> -->
+                        </div>
+                        <!-- <div class="orbit-ring"></div> -->
+                        <!-- <div class="orbit-ring ring-2"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title" data-key="about_title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-key="about_text">
+                        Я фронтенд разработчик с страстью к созданию красивых и функциональных
+                        веб-интерфейсов. Мой подход сочетает креативность с технической точностью,
+                        чтобы превращать сложные задачи в элегантные решения.
+                    </p>
+
+                    <!-- ===== СТАТИСТИКА ===== -->
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label" data-key="exp">Года опыта</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label" data-key="projects_count">Проектов</span>
+                        </div>
+                    </div>
+
+                    <!-- ===== ЯЗЫКИ ===== -->
+                    <div class="languages">
+                        <h3 data-key="languages_title">🌍 Языки</h3>
+                        <div class="language-item">
+                            <span class="lang-name" data-key="lang_tj">Таджикский</span>
+                            <div class="">
+                                <p>-</p>
+                            </div>
+                            <span class="lang-level" data-key="lang_tj_level">Родной</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name" data-key="lang_ru">Русский</span>
+                            <div class="">
+                                <p>-</p>
+                            </div>
+                            <span class="lang-level" data-key="lang_ru_level">Свободно</span>
+                        </div>
+                        <!-- <div class="language-item">
+                            <span class="lang-name" data-key="lang_en">Английский</span>
+                            <div class="">
+                                <p>-</p>
+                            </div>
+                            <span class="lang-level" data-key="lang_en_level">Средний</span>
+                        </div> -->
+                    </div>
+
+                    <!-- ===== ЦЕЛИ ===== -->
+                    <div class="goals">
+                        <h3 data-key="goals_title">🎯 Мои цели</h3>
+                        <ul class="goals-list">
+                            <li data-key="goal2">Создавать полезные продукты для людей</li>
+                            <li data-key="goal3">Работать в международной компании</li>
+                            <li data-key="goal4">Постоянно учиться новому</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title" data-key="skills_title">Мои навыки</h2>
+            <div class="skills-wrapper">
+                <div class="skills-grid" id="skillsGrid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h3>React</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
+                                fill="#38bdf8">
+                                <path
+                                    d="M12.001 4.8C8.401 4.8 6.401 6.8 6.001 10.4C6.601 8.4 7.801 7.2 9.601 6.8C10.801 6.6 11.801 6.8 12.601 7.4C13.801 8.2 14.601 9.4 16.001 9.4C18.001 9.4 19.801 7.6 20.401 5.6C19.801 7.6 18.601 8.8 16.801 9.2C15.601 9.4 14.601 9.2 13.801 8.6C12.601 7.8 11.801 6.6 10.401 6.6C8.401 6.6 6.601 8.4 6.001 10.4C5.401 8.4 6.601 6.6 8.401 6.2C9.601 6 10.601 6.2 11.401 6.8C12.601 7.6 13.401 8.8 14.801 8.8C16.801 8.8 18.601 7 19.201 5C18.601 7 17.401 8.2 15.601 8.6C14.401 8.8 13.401 8.6 12.601 8C11.401 7.2 10.601 6 9.201 6C7.201 6 5.401 7.8 4.801 9.8C4.201 7.8 5.401 6 7.201 5.6C8.401 5.4 9.401 5.6 10.201 6.2C11.401 7 12.201 8.2 13.601 8.2C15.601 8.2 17.401 6.4 18.001 4.4C17.401 6.4 16.201 7.6 14.401 8C13.201 8.2 12.201 8 11.401 7.4C10.201 6.6 9.401 5.4 8.001 5.4C6.001 5.4 4.201 7.2 3.601 9.2C3.001 7.2 4.201 5.4 6.001 5Z" />
+                            </svg>
+                        </div>
+                        <h3>Tailwind</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Responsive</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title" data-key="projects_title">Мои проекты</h2>
+            <div class="">
+
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- ВИДИМЫЕ ПРОЕКТЫ (первые 3) -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img class="imageProject" src="./images/image.png" alt="Todo List">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-key="project1_title">Todo List</h3>
+                            <p data-key="project1_desc">Полнофункциональный Todo List</p>
+                            <div class="project-tech">
+                                <span>JS</span>
+                                <span>HTML / CSS</span>
+                            </div>
+                            <a href="https://todo-list-six-alpha-20.vercel.app/" class="project-link" target="_blank"
+                                data-key="more">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img class="imageProject" src="./images/image copy.png" alt="Мобильное приложение">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-key="project2_title">Мобильное приложение</h3>
+                            <p data-key="project2_desc">Кроссплатформенное приложение для управления задачами</p>
+                            <div class="project-tech">
+                                <span>JS</span>
+                                <span>HTML / CSS</span>
+                            </div>
+                            <a href="https://table-user-three.vercel.app/" class="project-link" target="_blank"
+                                data-key="more">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img class="imageProject" src="./images/image copy 2.png" alt="Панель управления">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-key="project3_title">Панель управления</h3>
+                            <p data-key="project3_desc">Аналитическая панель с графиками и визуализацией данных</p>
+                            <div class="project-tech">
+                                <span>JS</span>
+                                <span>HTML / CSS</span>
+                            </div>
+                            <a href="https://table-user-2.vercel.app/" class="project-link" target="_blank"
+                                data-key="more">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- ===== СКРЫТЫЕ ПРОЕКТЫ (будут показаны при нажатии) ===== -->
+                    <div class="project-card hidden-project">
+                        <div class="project-image">
+                            <img class="imageProject" src="./images/project4.jpg" alt="Новый проект 4">
+                        </div>
+                        <div class="project-info">
+                            <h3>Новый проект 4</h3>
+                            <p>Описание нового проекта 4</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card hidden-project">
+                        <div class="project-image">
+                            <img class="imageProject" src="./images/project5.jpg" alt="Новый проект 5">
+                        </div>
+                        <div class="project-info">
+                            <h3>Новый проект 5</h3>
+                            <p>Описание нового проекта 5</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card hidden-project">
+                        <div class="project-image">
+                            <img class="imageProject" src="./images/project6.jpg" alt="Новый проект 6">
+                        </div>
+                        <div class="project-info">
+                            <h3>Новый проект 6</h3>
+                            <p>Описание нового проекта 6</p>
+                            <div class="project-tech">
+                                <span>Angular</span>
+                                <span>TypeScript</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank">Подробнее →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ===== КНОПКА ПОКАЗАТЬ БОЛЬШЕ ===== -->
+            <div class="show-more-wrapper">
+                <button class="btn show-more-btn" id="showMoreBtn">
+                    <span data-key="showMore" class="btn-text">Показать больше</span>
+                    <i class="fas fa-chevron-down btn-icon"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title" data-key="contact_title">Связаться со мной</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>sharipovzikriolloh28@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+992 887 99 00 88 </span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span data-key="location">Таджикистан, Душанбе</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/zikriolloh-05"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-key="footer">&copy; 2026 Шарипов Зикриоллоҳ. Все права защищены</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
