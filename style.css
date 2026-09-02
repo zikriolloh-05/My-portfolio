@@ -220,12 +220,13 @@ body.light-mode .nav-toggle span {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     animation: slideDown 0.8s ease;
     transition: background 0.3s ease;
+    overflow: hidden;
 }
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -242,7 +243,7 @@ body.light-mode .nav-toggle span {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     text-align: start;
 }
@@ -255,6 +256,7 @@ body.light-mode .nav-toggle span {
     transition: all 0.3s ease;
     position: relative;
     padding-bottom: 5px;
+    white-space: nowrap;
 }
 
 .nav-menu li a::after {
@@ -290,25 +292,26 @@ body.light-mode .nav-toggle span {
 .nav-controls {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
+    flex-shrink: 0;
 }
 
 /* ===== LANGUAGE SWITCHER ===== */
 .lang-switcher {
     display: flex;
-    gap: 4px;
+    gap: 3px;
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    padding: 4px;
+    border-radius: 16px;
+    padding: 3px;
 }
 
 .lang-btn {
     background: transparent;
     border: none;
     color: rgba(255, 255, 255, 0.5);
-    padding: 4px 10px;
+    padding: 3px 8px;
     border-radius: 16px;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -856,7 +859,10 @@ body.light-mode .nav-toggle span {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 440px) {
+    .navbar{
+        width: 81.6%;
+    }
     .home-buttons {
         flex-direction: column;
         align-items: center;
