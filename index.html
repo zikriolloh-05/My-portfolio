@@ -10,6 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./skils.css">
+
 </head>
 
 <body>
@@ -26,8 +33,15 @@
                 <li><a href="#skills" class="nav-link" data-key="skills">Навыки</a></li>
                 <li><a href="#projects" class="nav-link" data-key="projects">Проекты</a></li>
                 <li><a href="#contact" class="nav-link" data-key="contact">Контакты</a></li>
-                <li><a href="./files/resume.pdf" download class="nav-link resume-btn" data-key="resume"><i
-                            class="fas fa-file-pdf"></i> Резюме</a></li>
+                <li class="resume-group">
+                    <a href="./Files/CV Sharipov Zikriolloh.pdf" target="_blank" class="resume-view-btn"
+                        data-key="resume">
+                        <i class=""></i> <span data-key="Resume">резюме</span>
+                    </a>
+                    <a href="./Files/CV Sharipov Zikriolloh.pdf" download class="resume-download-btn" title="Скачать">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </li>
                 <li class="menu-lang-switcher">
                     <div class="lang-switcher">
                         <button class="lang-btn active" data-lang="ru">RU</button>
@@ -63,10 +77,7 @@
                         Создаю современные, быстрые и интерактивные веб-приложения
                         с использованием передовых технологий
                     </p>
-                    <div class="home-buttons">
-                        <a href="#projects" class="btn primary" data-key="projects_btn">Мои проекты</a>
-                        <a href="#contact" class="btn secondary" data-key="contact_btn">Связаться</a>
-                    </div>
+
                 </div>
                 <div class="home-image">
                     <div class="">
@@ -108,39 +119,31 @@
                     </div>
 
                     <!-- ===== ЯЗЫКИ ===== -->
-                    <div class="languages">
-                        <h3 data-key="languages_title">🌍 Языки</h3>
-                        <div class="language-item">
-                            <span class="lang-name" data-key="lang_tj">Таджикский</span>
-                            <div class="">
-                                <p>-</p>
+                    <div class="LangGlas">
+                        <div class="languages">
+                            <h3 data-key="languages_title">🌍 Языки</h3>
+                            <div class="language-item">
+                                <span class="lang-name" data-key="lang_tj">Таджикский</span>
+                                <p>•</p>
+                                <span class="lang-level" data-key="lang_tj_level">Родной</span>
                             </div>
-                            <span class="lang-level" data-key="lang_tj_level">Родной</span>
-                        </div>
-                        <div class="language-item">
-                            <span class="lang-name" data-key="lang_ru">Русский</span>
-                            <div class="">
-                                <p>-</p>
+                            <div class="language-item">
+                                <span class="lang-name" data-key="lang_ru">Русский</span>
+                                <p>•</p>
+                                <span class="lang-level" data-key="lang_ru_level">Свободно</span>
                             </div>
-                            <span class="lang-level" data-key="lang_ru_level">Свободно</span>
-                        </div>
-                        <!-- <div class="language-item">
-                            <span class="lang-name" data-key="lang_en">Английский</span>
-                            <div class="">
-                                <p>-</p>
-                            </div>
-                            <span class="lang-level" data-key="lang_en_level">Средний</span>
-                        </div> -->
-                    </div>
 
-                    <!-- ===== ЦЕЛИ ===== -->
-                    <div class="goals">
-                        <h3 data-key="goals_title">🎯 Мои цели</h3>
-                        <ul class="goals-list">
-                            <li data-key="goal2">Создавать полезные продукты для людей</li>
-                            <li data-key="goal3">Работать в международной компании</li>
-                            <li data-key="goal4">Постоянно учиться новому</li>
-                        </ul>
+                        </div>
+
+                        <!-- ===== ЦЕЛИ ===== -->
+                        <div class="goals">
+                            <h3 data-key="goals_title">🎯 Мои цели</h3>
+                            <ul class="goals-list">
+                                <li data-key="goal2">Создавать полезные продукты для людей</li>
+                                <li data-key="goal3">Работать в международной компании</li>
+                                <li data-key="goal4">Постоянно учиться новому</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,25 +155,27 @@
     <section id="skills" class="section skills">
         <div class="container">
             <h2 class="section-title" data-key="skills_title">Мои навыки</h2>
-            <div class="skills-wrapper">
-                <div class="skills-grid" id="skillsGrid">
-                    <div class="skill-card">
+            <div class="skilMydizayn" id="skilGrid">
+                <div class="">
+                    <div class="vseIcons">
                         <div class="skill-icon"><i class="fab fa-html5"></i></div>
                         <h3>HTML5</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="vseIcons">
                         <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
                         <h3>CSS3</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="vseIcons">
                         <div class="skill-icon"><i class="fab fa-js"></i></div>
                         <h3>JavaScript</h3>
                     </div>
-                    <div class="skill-card">
+                </div>
+                <div>
+                    <div class="vseIcons">
                         <div class="skill-icon"><i class="fab fa-react"></i></div>
                         <h3>React</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="vseIcons">
                         <div class="skill-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
                                 fill="#38bdf8">
@@ -180,13 +185,32 @@
                         </div>
                         <h3>Tailwind</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="vseIcons">
                         <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
                         <h3>Git</h3>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
-                        <h3>Responsive</h3>
+                </div>
+                <div>
+                    <div class="vseIcons">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="vseIcons">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
+                                fill="#764abc">
+                                <path
+                                    d="M12.5 1.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM2 12.5c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm18 0c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zM4.5 5.5c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm15 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zM4.5 17.5c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm15 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z" />
+                            </svg>
+                        </div>
+                        <h3>Redux</h3>
+                    </div>
+                    <div class="vseIcons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
+                            fill="#f5a623">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                        <h3>Zustand</h3>
                     </div>
                 </div>
             </div>
@@ -327,12 +351,12 @@
                         <span data-key="location">Таджикистан, Душанбе</span>
                     </div>
                 </div>
-                <div class="social-links">
+                <!-- <div class="social-links">
                     <a href="https://github.com/zikriolloh-05"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                     <a href="#"><i class="fab fa-telegram"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                </div> -->
 
             </div>
         </div>
